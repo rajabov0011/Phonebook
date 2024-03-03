@@ -9,7 +9,7 @@ namespace Phonebook.Crud.Services
 {
     internal class PhonebookService
     {
-        public PhoneBook[] PhoneBooks { get; set; } = new PhoneBook[10];
+        public PhoneBook[] PhoneBooks { get; set; } = new PhoneBook[3];
 
         public PhonebookService() 
         {
@@ -22,58 +22,17 @@ namespace Phonebook.Crud.Services
             PhoneBooks[1] = new PhoneBook
             {
                 Id = 2,
-                Name = "Abbos",
-                Phone = "+998900178547"
+                Name = "Oltin",
+                Phone = "+998958598855"
             };
             PhoneBooks[2] = new PhoneBook
             {
                 Id = 3,
-                Name = "Bekzod",
-                Phone = "+998916486616"
-            };
-            PhoneBooks[3] = new PhoneBook
-            {
-                Id = 4,
-                Name = "Sherzod",
-                Phone = "+998978954555"
-            };
-            PhoneBooks[4] = new PhoneBook
-            {
-                Id = 5,
-                Name = "Oltin",
-                Phone = "+998958598855"
-            };
-            PhoneBooks[5] = new PhoneBook
-            {
-                Id = 6,
                 Name = "Shaxzod",
                 Phone = "+998914074477"
             };
-            PhoneBooks[6] = new PhoneBook
-            {
-                Id = 7,
-                Name = "Nizom",
-                Phone = "+998903378333"
-            };
-            PhoneBooks[7] = new PhoneBook
-            {
-                Id = 8,
-                Name = "Javlonbek",
-                Phone = "+998909444443"
-            };
-            PhoneBooks[8] = new PhoneBook
-            {
-                Id = 9,
-                Name = "Ulug'bek",
-                Phone = "+998901181811"
-            };
-            PhoneBooks[9] = new PhoneBook
-            {
-                Id = 10,
-                Name = "Shoxrux",
-                Phone = "+998912448888"
-            };
         }
+
         public void ReadAllPhoneBooks()
         {
             Console.Clear();
@@ -90,6 +49,7 @@ namespace Phonebook.Crud.Services
                 }
             }
         }
+
         public void DeletePhoneBookById(int id)
         {
             id = id - 1;

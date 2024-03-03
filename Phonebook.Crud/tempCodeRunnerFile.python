@@ -1,0 +1,35 @@
+def month(mon: int):
+    if mon > 2 and mon < 6:
+        if mon == 3:
+            print("Mart oyi Bahor fasliga kiradi")
+        elif mon == 4:
+            print("Aprel oyi Bahor fasliga kiradi")
+        elif mon == 5:
+            print("May oyi Bahor fasliga kiradi")
+    elif mon >5 and mon < 9:
+        if mon == 6:
+            print("Iyun oyi Yoz fasliga kiradi")
+        elif mon == 7:
+            print("Iyul oyi Yoz fasliga kiradi")
+        elif mon == 8:
+            print("Avgust oyi Yoz fasliga kiradi")
+    elif mon >8 and mon < 12:
+        if mon == 9:
+            print("Sentyabr oyi kuz fasliga kiradi")
+        elif mon == 10:
+            print("Oktyabr oyi kuz fasliga kiradi")
+        elif mon == 11:
+            print("Noyabr oyi kuz fasliga kiradi")
+    elif mon == 12 or mon > 0 and mon < 3:
+        if mon == 12:
+            print("Dekabr oyi qish fasliga kiradi")
+        elif mon == 1:
+            print("Yanvar oyi qish fasliga kiradi")
+        elif mon == 2:
+            print("Fevral oyi qish fasliga kiradi")
+    else:
+        print("Bunday oy mavjud emas! ")
+
+
+month_number = int(input("Oy raqamini kiriting: "))
+month(month_number)
